@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/PendigGameMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="350dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/GameID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game ID:"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Text" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Planets"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/Text" />
+
+                <EditText
+                    android:id="@+id/planetAmount"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/buttonColor"
+                    android:layout_alignBottom="@+id/buttonColor"
+                    android:layout_alignParentLeft="true"
+                    android:ems="10"
+                    android:text="5"
+                    android:textColor="@color/Text" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/generatePlanets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Generate" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/startGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Start" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/PlanetTurnMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="350dp"
+            android:orientation="vertical" >
+
+	        <Button
+	            android:id="@+id/EndTurnButton"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:text="End turn" />
+	
+	        <TextView
+	            android:id="@+id/SelectedPLanetText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_below="@+id/EndTurnButton"
+	            android:text="Selected planet "
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	        <TextView
+	            android:id="@+id/PlanetInfoShips"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_below="@+id/SelectedPLanetText"
+	            android:text="TextView"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	        <TextView
+	            android:id="@+id/PlanetInfoIncome"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_below="@+id/PlanetInfoShips"
+	            android:text="Small Text"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	        <TextView
+	            android:id="@+id/PlanetInfoAttackRate"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_below="@+id/PlanetInfoIncome"
+	            android:text="Small Text"
+	            android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	        <TextView
+	            android:id="@+id/SendShipsText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_below="@+id/PlanetInfoAttackRate"
+	            android:layout_marginTop="15dp"
+	            android:text="Send"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	        
+	        <LinearLayout
+	        android:id="@+id/SendShipsGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal" >
+                	
+		        <EditText
+		            android:id="@+id/SendShipsAmount"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignRight="@+id/PlanetInfoAttackRate"
+		            android:layout_alignTop="@+id/SendShipsText"
+		            android:ems="10"
+		            android:inputType="number"
+		            android:width="100dp"
+        			android:textColor="@color/Text" />
+		
+		        <Button
+		            android:id="@+id/SendShipsSend"
+		            style="?android:attr/buttonStyleSmall"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBottom="@+id/editText1"
+		            android:layout_alignTop="@+id/editText1"
+		            android:layout_toRightOf="@+id/EndTurnButton"
+		            android:text="Button" />
+	        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

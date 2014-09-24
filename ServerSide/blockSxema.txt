@@ -1,0 +1,19 @@
+
+
+
+Sozdanie igri
+
+1 generate planets
+2 proapdeitit' planeti po vsem useram
+
+connect
+
+1 dobavit usera (esli netu)
+3 proapdetit planetu
+
+
+poluchit' strukturu
+
+1 useri
+2 status geima
+3 planeti

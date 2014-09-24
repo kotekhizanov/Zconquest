@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity" >
+
+    <Button
+        android:id="@+id/connectToGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/GameID"
+        android:layout_alignRight="@+id/GameID"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/GameID"
+        android:text="@string/connectToGame" />
+
+    <Button
+        android:id="@+id/createGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/GameID"
+        android:layout_alignRight="@+id/GameID"
+        android:layout_below="@+id/connectToGame"
+        android:text="@string/createGame" />
+
+    <TextView
+        android:id="@+id/LoginErrorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/createGame"
+        android:layout_alignRight="@+id/createGame"
+        android:layout_below="@+id/createGame"
+        android:gravity="center"
+        android:textColor="@color/ErrorText" />
+
+    <EditText
+        android:id="@+id/GameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="146dp"
+        android:ems="10"
+        android:hint="@string/GameID"
+        android:textColor="@color/Text" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
