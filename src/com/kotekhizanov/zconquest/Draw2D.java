@@ -20,7 +20,7 @@ public class Draw2D extends View{
     public Draw2D(Context context)
     {
     	super(context);
-    	
+    	//
     	/*
     	DisplayMetrics metrics = new DisplayMetrics();    
     	WindowManager windowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
